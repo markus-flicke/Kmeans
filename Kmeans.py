@@ -2,9 +2,11 @@ import pandas as pd
 import numpy as np
 import random
 import matplotlib.pyplot as plt
+import seaborn as sns
+
 
 class Kmeans:
-    def __init__(self, df = pd.read_csv('data/s1'), k = 15):
+    def __init__(self, df=pd.read_csv('data/s1'), k=15):
         self.df = df
         self.k = k
         self.dimensions = df.shape[1]
@@ -12,13 +14,14 @@ class Kmeans:
         self.closestMeans = None
         self.classifiedDF = self.df.copy()
         self.plotIdx = 0
+        self.colorPalette = sns.color_palette("hls", k)
 
     def randomiseMeans(self):
         return [self.randomisedMean() for i in range(self.k)]
 
     def randomisedMean(self):
-        return np.array([random.randint(self.df.iloc[:,j].min(), self.df.iloc[:,j].max())
-                          for j in range(self.dimensions)])
+        return np.array([random.randint(self.df.iloc[:, j].min(), self.df.iloc[:, j].max())
+                         for j in range(self.dimensions)])
 
     def setMeanToCentroids(self):
         def findCentroid(df):
@@ -44,16 +47,16 @@ class Kmeans:
         return closestMeanIndex
 
     def distanceOf(self, a, b):
-        return np.linalg.norm(a-b)
+        return np.linalg.norm(a - b)
 
-    def calculate(self, iterations = 1, plotAll = False):
+    def calculate(self, iterations=1, plotAll=False):
         for i in range(iterations):
             self.classifiedDF['closestMean'] = pd.Series(self.findClosestMean(self.df.iloc[i]) for i in self.df.index)
             self.setMeanToCentroids()
             if plotAll:
-                self.plot(show = False)
+                self.plot(show=False)
 
-    def plot(self, show = False):
+    def plot(self, show=False):
         plt.gcf().clear()
         gb = self.classifiedDF.groupby('closestMean')
         for i in range(self.k):
@@ -62,7 +65,7 @@ class Kmeans:
             except:
                 print('WARNING: Empty group detected during plotting')
                 continue
-            plt.scatter(group.x, group.y)
+            plt.scatter(group.x, group.y, color = self.colorPalette[i])
 
         plt.scatter([x[0] for x in self.means], [x[1] for x in self.means], marker='x', color='red')
         if show:
@@ -74,5 +77,4 @@ class Kmeans:
 
 if __name__ == '__main__':
     kmeans = Kmeans()
-    kmeans.calculate(iterations = 5, plotAll=True)
-
+    kmeans.calculate(iterations=5, plotAll=True)
