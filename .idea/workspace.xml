@@ -4,11 +4,16 @@
     <list default="true" id="9211fb55-a0fd-436f-a150-52407b25f099" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kmeans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unluckyExamples/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unluckyExamples/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unluckyExamples/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unluckyExamples/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unluckyExamples/4.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,21 +25,24 @@
     <session id="-2079359227">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1974" />
+          <entry key="dummy" value="31" />
+          <entry key="py" value="3946" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1974" />
+          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Python" value="3946" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -54,13 +62,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Kmeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+            <state relative-caret-position="315">
+              <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1538009472000" expanded="true" signature="179:463" ph="..." />
-                <marker date="1538009472000" expanded="true" signature="581:738" ph="..." />
-                <marker date="1538009472000" expanded="true" signature="767:1237" ph="..." />
               </folding>
             </state>
           </provider>
@@ -78,7 +83,23 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dimension</find>
+      <find>calc</find>
+      <find>cal</find>
+      <find>randomiseMeans</find>
+      <find>randomisedMean</find>
+      <find>lin</find>
+      <find>df</find>
+      <find>classifiedDF</find>
+      <find>closestMean</find>
+      <find>Mean</find>
+      <find>setCentroidsToGeographicalCenter</find>
+      <find>centroid</find>
+      <find>calculate</find>
+      <find>x</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,7 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,6 +132,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -169,14 +190,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49964765" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49964765" weight="0.15180723" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -203,13 +223,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        <state relative-caret-position="315">
+          <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1538009472000" expanded="true" signature="179:463" ph="..." />
-            <marker date="1538009472000" expanded="true" signature="581:738" ph="..." />
-            <marker date="1538009472000" expanded="true" signature="767:1237" ph="..." />
           </folding>
         </state>
       </provider>
